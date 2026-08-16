@@ -94,3 +94,20 @@ HR-Strategy-and-Talent-Retention-Analysis/
 ├── hr_departments.csv
 ├── hr_employees.csv
 └── README.md
+
+How to Use This Project
+Python Notebook
+Open app.ipynb in Jupyter Notebook or JupyterLab to review the data preparation and analysis process.
+
+Power BI Dashboard
+Open dashboard.pbix using Power BI Desktop.
+
+The CSV files should remain in the same project folder so that the data connections can be refreshed correctly.
+
+Data Note
+The datasets included in this repository are used for learning and portfolio purposes.
+
+No confidential or personally identifiable employee information should be included in the public repository.
+
+Author
+Fatemeh Fazel
