@@ -1,36 +1,96 @@
-# HR Attrition Analytics Dashboard
+# HR Strategy and Talent Retention Analysis
 
-A Power BI-based HR analytics project designed to analyze employee attrition, identify high-risk departments, and estimate turnover costs to support data-driven HR decisions.
+An HR analytics project developed with Python and Power BI to analyze employee attrition, identify high-risk departments, and support data-driven talent retention strategies.
 
-## Executive Summary
-This dashboard provides a comprehensive view of employee attrition across the organization. It connects HR records, builds key metrics using DAX, and translates raw data into strategic insights for HR teams.
+## Project Overview
 
-Key outcomes:
-- Identifying departments with the highest attrition risk.
-- Quantifying total turnover cost.
-- Analyzing attrition drivers by job satisfaction, performance score, and time.
+Employee attrition can increase recruitment costs, reduce productivity, and affect organizational performance.
 
-## Tools & Techniques
-- **Power BI**: Data modeling, visualization, and dashboard design.
-- **DAX**: Custom measures for attrition rate and turnover cost.
-- **Data Modeling**: Relationship building between employee and department tables.
-- **Conditional Formatting**: Highlighting high-risk departments.
+This project analyzes HR data to help identify:
+
+- Overall employee attrition
+- High-risk departments
+- Employee terminations over time
+- Attrition by job satisfaction
+- Attrition by performance score
+- Estimated turnover cost
+- Department-level retention priorities
+
+## Tools and Technologies
+
+- Python
+- Pandas
+- Jupyter Notebook
+- Power BI
+- DAX
+- Data Modeling
+- Data Visualization
+- Conditional Formatting
+
+## Project Workflow
+
+1. HR data was prepared and processed using Python.
+2. The employee, department, and calendar datasets were organized.
+3. Relationships between the data tables were created in Power BI.
+4. DAX measures were developed for key HR metrics.
+5. An interactive three-page Power BI dashboard was designed.
+6. High-risk departments and turnover costs were highlighted using visual analysis.
 
 ## Dashboard Pages
-1. **Executive Summary**: High-level KPIs (Employee Count, Attrition Rate, Turnover Cost).
-2. **Deep Dive**: Analytical view (Attrition by Job Satisfaction, Performance, and Time).
-3. **Actionable Insights**: Priority-focused summary to support HR interventions.
 
-## Key Insights
-- **Marketing** and **IT** departments have the highest attrition rates.
-- The organization’s overall attrition rate is **19.60%**, with **98** terminated employees.
-- Estimated total turnover cost is **1,470,000**.
+### 1. Executive Summary
 
-## How to Use
-1. Download the `.pbix` file.
-2. Open in Power BI Desktop.
-3. Explore the dashboard pages.
+Provides an overview of the most important HR metrics:
 
-## Author
-**Fatemeh Fazel**  
-Aspiring Data Analyst | Power BI | Python | SQL
+- Employee Count: 500
+- Attrition Rate: 19.60%
+- Employees Who Left: 98
+- Employees Who Stayed: 402
+- Estimated Turnover Cost: 1,470,000
+
+### 2. Deep Dive
+
+Analyzes employee attrition by:
+
+- Department
+- Job Satisfaction
+- Performance Score
+- Time
+- Attrition Status
+
+### 3. Actionable Insights
+
+Highlights departments that require greater retention attention.
+
+The highest attrition rates were observed in:
+
+- Marketing: 25.00%
+- IT: 24.30%
+- Finance: 19.23%
+- Sales: 16.19%
+- HR: 14.42%
+
+Marketing and IT represent the highest-priority departments for further investigation and retention planning.
+
+## Key Findings
+
+- The overall attrition rate is 19.60%.
+- 98 out of 500 employees left the organization.
+- Marketing has the highest attrition rate.
+- IT has the second-highest attrition rate and the highest number of terminations.
+- The estimated total turnover cost is 1,470,000.
+- Department-level analysis can help HR prioritize retention initiatives.
+
+## Repository Structure
+```text
+HR-Strategy-and-Talent-Retention-Analysis/
+├── images/
+│   ├── 01_executive_summary.png
+│   ├── 02_deep_dive.png
+│   └── 03_actionable_insights.png
+├── app.ipynb
+├── dashboard.pbix
+├── calendar.csv
+├── hr_departments.csv
+├── hr_employees.csv
+└── README.md
